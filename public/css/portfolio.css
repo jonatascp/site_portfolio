@@ -1,0 +1,297 @@
+
+/*=========================================================================
+ PORTFOLIO Sliding Fader
+========================================================================= */
+
+#filtrable { float: right; }
+
+#filtrable li { float: left; margin-right: 10px; list-style: none; }
+
+#filtrable a { padding: 0 10px; background-color: #fff; border: 1px solid #ececec; font-size: 12px; color: #777; display: inline-block; }
+
+#filtrable a:hover, #filtrable .current a { color: #fff; border-color: rgba(0, 0, 0, 0.1); background-color: #D74340; }
+
+.p-view, .p-link { display: block; width: 36px; height: 36px; position: absolute; top: 50%; margin-top: -18px; }
+
+.p-view { left: 50%; margin-left: -50px; background: url("../images/icons/view.png") repeat scroll 0 0 transparent; }
+
+.p-view:hover { background-position: 0 -36px; }
+
+.p-link { right: 50%; margin-right: -50px; background: url(../images/icons/link.png); }
+
+.p-link:hover { background-position: 0 -36px; }
+
+/*=========================================================================
+ DA THUMBS Sliding Fader
+ ========================================================================= */
+.da-thumbs li, .da-thumbs article, .da-thumbs.portfolio span { overflow: hidden; position: relative; }
+
+.da-thumbs li img, .da-thumbs.portfolio span { display: block; position: relative; }
+
+.da-thumbs li div, .da-thumbs article div { position: absolute; background: rgba(255, 255, 255, 0.3); width: 100%; height: 100%; }
+
+.da-thumbs li div.da-animate, .da-thumbs article div.da-animate { -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+
+.da-slideFromTop { left: 0px; top: -100%; }
+
+.da-slideFromBottom { left: 0px; top: 100%; }
+
+.da-slideFromLeft { top: 0px; left: -100%; }
+
+.da-slideFromRight { top: 0px; left: 100%; }
+
+.da-slideTop { top: 0px; }
+
+.da-slideLeft { left: 0px; }
+
+/*=========================================================================
+ Portfolio Scrolling text Start
+========================================================================= */
+
+/* ------------- filter bar ------------- */
+
+#filter { display: block; position: relative; float: right; }
+
+#filter li { float: left; margin: 0px 5px 0px 0px; padding: 0; margin-bottom: 0px; overflow: hidden; }
+
+#filter a { text-decoration: none; border: 1px solid #CC4B3A; color: #5b5b5d; display: block; background:#fff; border: 1px solid #ECECEC; outline: none; padding: 0 10px 0 10px; }
+
+#filter a:hover { background:#D74340; border: 1px solid rgba(0, 0, 0, 0.1); color:#fff; }
+
+#filter .active a { background: #303030; border: 1px solid #000; outline:none; color:#fff; text-decoration: none; }
+
+/*=========================================================================
+ Portfolio Column Layout
+========================================================================= */
+
+#stage { margin:0; padding:0; display: inline-block; margin-bottom: 30px; width:100%; height:auto; }
+
+.boxcaption { float:left; position: absolute; background: url("../images/caption-bg.png") repeat scroll left top transparent; cursor:pointer; }
+
+.img-border-port { background: #fff; display: inline-block; padding:5px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; -webkit-box-shadow: 0 0 0 1px #e7e7e7 inset; -moz-box-shadow: 0 0 0 1px #e7e7e7 inset; box-shadow: 0 0 0 1px #e7e7e7 inset; behavior: url(js/PIE.htc); }
+
+.project-name { float:left; width:100%; }
+
+.project-name h5 { color:#fff; letter-spacing: 0.7px; text-shadow: 0 -1px 0 #333333; text-transform: uppercase; }
+
+.project-text { float:left; width:100%; }
+
+.project-text a.textlink { background:url("../images/caption-link.png") no-repeat left 8px; margin-right: 25px; padding-left:24px; font-style:italic; }
+
+.project-text a:hover { }
+
+.project-text p { line-height:18px; color:#fcfcfc; margin-bottom: 10px; }
+
+.project-text a { float:left; font-size:12px; color:#fcfcfc; }
+
+.project-text a.small { float:left; font-size:10px; margin-top:16px; margin-right:5px; }
+
+.project-divider { background: url("../images/divider.png") repeat-x scroll left bottom transparent; height: 1px; margin: 20px 0 0; }
+
+/* ------------- Portfolio 2 column  ---------------- */
+.portfolio-2column { position: relative; width: 960px; margin: 0 auto; padding: 0; }
+
+.portfolio-2column li { float: left; margin-left: 10px; margin-right: 10px; margin-top:20px; overflow:hidden; position:relative; }
+
+.portfolio-2column li { width: 460px; }
+
+.portfolio-2column li .boxcaption { bottom: -147px; left: 5px; }
+
+.portfolio-2column li .box_2 { width: 410px; height:175px; padding:10px 20px; }
+
+.portfolio-2column .project-name h5 { margin-bottom: 43px; }
+
+/* ------------- Portfolio 3 column  ---------------- */
+.portfolio-3column { position: relative; width: 960px; margin: 0 auto; padding: 0; }
+
+.portfolio-3column li { float: left; margin-left: 10px; margin-right: 10px; margin-top:20px; overflow:hidden; position:relative; }
+
+.portfolio-3column li { width: 300px; }
+
+.portfolio-3column li .boxcaption { bottom: -115px; left: 5px; }
+
+.portfolio-3column li .box_2 { width: 250px; height:143px; padding:10px 20px; }
+
+.portfolio-3column .project-name h5 { margin-bottom: 28px; }
+
+/* ------------- Portfolio 4 column  ---------------- */
+.portfolio-4column { position: relative; width: 960px; margin: 0 auto; padding: 0; }
+
+.portfolio-4column li { float: left; margin-left: 10px; margin-right: 10px; margin-top:20px; overflow:hidden; position:relative; }
+
+.portfolio-4column li { width: 220px; }
+
+.portfolio-4column li .boxcaption { bottom: -70px; left: 5px; }
+
+.portfolio-4column li .box_2 { width: 170px; height: 98px; padding:10px 20px; }
+
+.portfolio-4column .project-name h5 { margin-bottom: 28px; }
+ @media only screen and (min-width: 768px) and (max-width: 959px) {
+ /*=========================================================================
+ Portfolio Scrolling text Start
+========================================================================= */
+
+/* ------------- Portfolio 2 column  ---------------- */
+.portfolio-2column {
+width: 768px;
+}
+.portfolio-2column li {
+margin-left: 10px;
+margin-right: 10px;
+}
+.portfolio-2column li {
+width: 364px;
+}
+.portfolio-2column li .box_2 {
+width: 314px;
+}
+
+/* ------------- Portfolio 3 column  ---------------- */
+.portfolio-3column {
+width: 768px;
+}
+.portfolio-3column li {
+margin-left: 10px;
+margin-right: 10px;
+}
+.portfolio-3column li {
+width: 364px;
+}
+.portfolio-3column li .box_2 {
+width: 314px;
+}
+
+/* ------------- Portfolio 4 column  ---------------- */
+.portfolio-4column {
+width: 768px;
+}
+.portfolio-4column li {
+margin-left: 10px;
+margin-right: 10px;
+}
+.portfolio-4column li {
+width: 364px;
+}
+.portfolio-4column li .box_2 {
+width: 314px;
+}
+}
+@media only screen and (max-width: 767px) {
+/*=========================================================================
+ PORTFOLIO Sliding Fader
+========================================================================= */
+
+#filtrable {
+margin-top: 30px;
+float: left;
+}
+/*=========================================================================
+ Portfolio Scrolling text Start
+========================================================================= */
+
+#filter {
+margin-top: 30px;
+float: left;
+}
+
+/* ------------- Portfolio 2 column  ---------------- */
+.portfolio-2column {
+width:300px;
+}
+.portfolio-2column li {
+margin-left: 0;
+margin-right: 0;
+margin-top:20px;
+}
+.portfolio-2column li {
+width:300px;
+}
+.portfolio-2column li .box_2 {
+width: 250px;
+}
+
+/* ------------- Portfolio 3 column  ---------------- */
+.portfolio-3column {
+width:300px;
+}
+.portfolio-3column li {
+margin-left: 0;
+margin-right: 0;
+margin-top:20px;
+}
+.portfolio-3column li {
+width:300px;
+}
+.portfolio-3column li .box_2 {
+width: 250px;
+}
+
+/* ------------- Portfolio 4 column  ---------------- */
+.portfolio-4column {
+width:300px;
+}
+.portfolio-4column li {
+margin-left: 0;
+margin-right: 0;
+margin-top:20px;
+}
+.portfolio-4column li {
+width:300px;
+}
+.portfolio-4column li .box_2 {
+width: 250px;
+}
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+/*=========================================================================
+ Portfolio Scrolling text Start
+========================================================================= */
+
+/* ------------- Portfolio 2 column  ---------------- */
+.portfolio-2column {
+width: 420px;
+}
+.portfolio-2column li {
+margin-left: 0;
+margin-right: 0;
+margin-top:20px;
+}
+.portfolio-2column li {
+width: 420px;
+}
+.portfolio-2column li .box_2 {
+width: 370px;
+}
+
+/* ------------- Portfolio 3 column  ---------------- */
+.portfolio-3column {
+width: 420px;
+}
+.portfolio-3column li {
+margin-left: 0;
+margin-right: 0;
+margin-top:20px;
+}
+.portfolio-3column li {
+width: 420px;
+}
+.portfolio-3column li .box_2 {
+width: 370px;
+}
+
+/* ------------- Portfolio 4 column  ---------------- */
+.portfolio-4column {
+width: 420px;
+}
+.portfolio-4column li {
+margin-left: 0;
+margin-right: 0;
+margin-top:20px;
+}
+.portfolio-4column li {
+width: 420px;
+}
+.portfolio-4column li .box_2 {
+width: 370px;
+}
+}

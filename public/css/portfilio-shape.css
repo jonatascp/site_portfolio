@@ -1,0 +1,197 @@
+
+/*=========================================================================
+ portfolio-shapes
+========================================================================= */
+
+.portfolio-shape li .boxcaption { bottom: -241px; left: 0; }
+
+.portfolio-shape li .box_2 { width: 178px; height: 120px; padding: 60px 20px; text-align: center; }
+
+.portfolio-shape .boxcaption { float:left; position: absolute; background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7); cursor:pointer; }
+
+.portfolio-shape .project-name { float:left; width:100%; }
+
+.portfolio-shape .project-name h2 { color:#fff; text-transform: uppercase; }
+
+.portfolio-shape .project-name h5 { margin-bottom: 28px; }
+
+.project-float-text { float:left; width:100%; }
+
+.project-float-text p { line-height:18px; color:#fcfcfc; margin-bottom: 10px; }
+
+.portfolio-shape .p-view, .portfolio-shape .p-link { display: block; width: 36px; height: 36px; position: absolute; top: 50%; margin-top: 81px; z-index: 999; }
+
+portfolio-shape .p-view { left: 50%; margin-left: -50px; background: url("../images/icons/view.png") repeat scroll 0 0 transparent; }
+
+portfolio-shape .p-view:hover { background-position: 0 -36px; }
+
+portfolio-shape .p-link { right: 50%; margin-right: -50px; background: url(../images/icons/link.png); }
+
+portfolio-shape .p-link:hover { background-position: 0 -36px; }
+
+/*=========================================================================
+ PORTFOLIO
+========================================================================= */
+
+.portfolio-float { width: 960px; margin: 0 0 30px; padding: 0; float: left; }
+
+.portfolio-float ul { list-style-type: none; margin: 0; padding: 0; }
+
+.portfolio-float ul li { float: left; margin: 0 0 5px 5px; padding: 0; position: relative; background-color: #f8f8f8; }
+
+.portfolio-float ul li img { float: left; }
+
+/*=========================================================================
+ port-effect STYLE ITEM
+========================================================================= */
+
+.portfolio-float ul.port-effect li { margin: 20px 10px 0; background-color: transparent; overflow: hidden; }
+
+.port-effect .img-effect-port { display: block; position: relative; }
+
+.port-effect .item-mask { position: absolute; left: 0; top: 0; z-index: 99; }
+
+.port-effect .img-effect-port img { z-index:9; }
+
+/*=========================================================================
+ HEXAGON STYLE
+========================================================================= */
+
+.hexagon .img-effect-port { width: 220px; height: 240px; }
+
+.hexagon .item-mask { background: url(../images/portfolio/mask-hexagon.png) no-repeat 0 0 transparent; width: 220px; height: 240px; }
+
+.hexagon .img-effect-port img { height: 240px; }
+
+/*=========================================================================
+ Circle STYLE
+========================================================================= */
+
+.circle .img-effect-port { width: 220px; height: 240px; }
+
+.circle .item-mask { background: url(../images/portfolio/mask-circle.png) no-repeat 0 0 transparent; width: 220px; height: 240px; }
+
+.circle .img-effect-port img { height: 240px; }
+
+/* Circle dash */
+
+.circle-dash .img-effect-port { width: 220px; height: 240px; }
+
+.circle-dash .item-mask { background: url(../images/portfolio/mask-circle-dash.png) no-repeat 0 0 transparent; width: 220px; height: 240px; }
+
+.circle-dash .img-effect-port img { height: 240px; }
+
+/* Circle rough */
+
+.circle-rough .img-effect-port { width: 220px; height: 240px; }
+
+.circle-rough .item-mask { background: url(../images/portfolio/mask-circle-rough.png) no-repeat 0 0 transparent; width: 220px; height: 240px; }
+
+.circle-rough .img-effect-port img { height: 240px; }
+
+/* Circle flower */
+
+.circle-flower .img-effect-port { width: 220px; height: 240px; }
+
+.circle-flower .item-mask { background: url(../images/portfolio/mask-circle-flower.png) no-repeat 0 0 transparent; width: 220px; height: 240px; }
+
+.circle-flower .img-effect-port img { height: 240px; }
+
+/* Circle tag */
+
+.circle-tag .img-effect-port { width: 220px; height: 240px; }
+
+.circle-tag .item-mask { background: url(../images/portfolio/mask-circle-tag.png) no-repeat 0 0 transparent; width: 220px; height: 240px; }
+
+.circle-tag .img-effect-port img { height: 240px; }
+
+/*=========================================================================
+ PORTFOLIO filterable NAVIGATION
+========================================================================= */
+
+.filterable-float { float: right; }
+
+.filterable-float ul { margin: 0 auto; }
+
+.filterable-float li { background: none; display: inline; float: left; margin-right: 10px; }
+
+.filterable-float li:last-child { background: none; }
+
+.filterable-float li a { background-color: #FFFFFF; border: 1px solid #ECECEC; color: #777777; display: inline-block; font-size: 12px; padding: 0 10px; }
+
+.filterable-float li a:hover { background-color: #D74340; border-color: rgba(0, 0, 0, 0.1); color: #FFFFFF; }
+
+.filterable-float li.current a { background-color: #D74340; border-color: rgba(0, 0, 0, 0.1); color: #FFFFFF; }
+
+.filterable-float li span { font-size: 11px; color: #ccc; }
+ @media only screen and (min-width: 768px) and (max-width: 959px) {
+ .portfolio-float {
+width: 768px;
+}
+ .portfolio-float ul.port-effect.hexagon li {
+margin: 20px 18px 0;
+}
+ .portfolio-float ul.port-effect.circle li {
+margin: 20px 18px 0;
+}
+ .portfolio-float ul.port-effect.circle-dash li {
+margin: 20px 18px 0;
+}
+ .portfolio-float ul.port-effect.circle-rough li {
+margin: 20px 18px 0;
+}
+ .portfolio-float ul.port-effect.circle-flower li {
+margin: 20px 18px 0;
+}
+ .portfolio-float ul.port-effect.circle-tag li {
+margin: 20px 18px 0;
+}
+}
+ @media only screen and (max-width: 767px) {
+ .portfolio-float {
+width: 100%;
+margin: 0;
+}
+ .portfolio-float ul.port-effect.hexagon li {
+margin: 20px 40px 0 40px;
+}
+ .portfolio-float ul.port-effect.circle li {
+margin: 20px 40px 0 40px;
+}
+ .portfolio-float ul.port-effect.circle-dash li {
+margin: 20px 40px 0 40px;
+}
+ .portfolio-float ul.port-effect.circle-rough li {
+margin: 20px 40px 0 40px;
+}
+ .portfolio-float ul.port-effect.circle-flower li {
+margin: 20px 40px 0 40px;
+}
+ .portfolio-float ul.port-effect.circle-tag li {
+margin: 20px 40px 0 40px;
+}
+}
+ @media only screen and (min-width: 480px) and (max-width: 767px) {
+ .portfolio-float {
+width: 100%;
+margin: 0;
+}
+ .portfolio-float ul.port-effect.hexagon li {
+margin: 20px 100px 0;
+}
+ .portfolio-float ul.port-effect.circle li {
+margin: 20px 100px 0;
+}
+ .portfolio-float ul.port-effect.circle-dash li {
+margin: 20px 100px 0;
+}
+ .portfolio-float ul.port-effect.circle-rough li {
+margin: 20px 100px 0;
+}
+ .portfolio-float ul.port-effect.circle-flower li {
+margin: 20px 100px 0;
+}
+ .portfolio-float ul.port-effect.circle-tag li {
+margin: 20px 100px 0;
+}
+}
