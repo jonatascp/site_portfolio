@@ -2,5 +2,5 @@
 require 'sinatra'
 
 get '/' do
-  'Teste'
+  redirect '/index.html'
 end
