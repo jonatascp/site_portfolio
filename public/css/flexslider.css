@@ -1,0 +1,180 @@
+
+#container { margin: 0 auto; width: 940px; position:relative; }
+
+.flexslider .slides > li.dnone { display:none; position:static; }
+
+.flexslider .slides > li { display: block; height: 415px; position:absolute; } /* Hide the slides before the JS is loaded. Avoids image jumping */
+
+.flexslider .slides > li:first-child { position:static; }
+
+.flex-pauseplay span { text-transform: capitalize; }
+
+/* Clearfix for the .slides element */
+.slides:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+
+html[xmlns] .slides { display: block; }
+
+* html .slides { height: 1%; }
+
+.flexslider { background: url("../images/slider/macbook.png") no-repeat scroll 50% 0 transparent; height: 510px; margin: 40px 0 0; overflow: hidden; position: relative; width: 100%; }
+
+.flexslider .slides img { max-width: 100%; display: block; padding: 42px 0 0 173px; }
+
+.flexslider iframe { width: 595px; height: 373px; padding: 42px 0 0 173px; }
+
+.prev, .next { display: block; height: 40px; width: 26px; }
+
+.flex-direction-nav { bottom: 200px; display: block; height: 40px; position: relative; }
+
+.flex-direction-nav li { display: inline-block; }
+
+.flex-direction-nav li:first-child { float: left; }
+
+.flex-direction-nav li:last-child { float: right; }
+
+.next { background: url("../images/next.png") no-repeat scroll 0 0 transparent; }
+
+.prev { background: url("../images/prev.png") no-repeat scroll 0 0 transparent; }
+
+.flex-caption { position: relative; margin: 0 auto; bottom: 73px; z-index:1; width: 596px; }
+
+.slide-text-1 { font-size: 21px; line-height:21px; font-family: 'Open Sans', Arial, Tahoma, sans-serif; font-weight: 800; color:#f9f9f9; text-transform: uppercase; }
+
+.slide-text-2 { color:#eee; }
+
+.slide-text-2 a { }
+
+.slide-text-2 a:hover { color:#fff; }
+
+.flex-border-1 { background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7); padding: 10px 0; margin: 0 auto; text-align: center; }
+
+.flex-border { padding: 30px 60px 30px 30px; width:240px; background: url("../images/flex-border.png") repeat-y scroll 289px 0 rgba(255, 255, 255, 0.03); }
+
+.flex-bg { background: url('../images/flex-caption-bg.png'); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); behavior: url(js/PIE.htc); }
+
+/* Control Nav */
+.flexslider .flex-control-nav { position:absolute; left:423px; bottom: 60px; list-style:none; z-index:5; }
+
+.flexslider .flex-control-nav li { float:left; padding-right: 5px; padding-left: 5px; }
+
+.flexslider .flex-control-nav li a { display:block; text-indent:-999em; width:15px; height:15px; background: url('../images/nav-marker.png') no-repeat; margin-bottom:5px; }
+
+.flexslider .flex-control-nav li a:hover, .flexslider .flex-control-nav li a.active { background: url('../images/nav-marker.png') no-repeat 0 -15px; }
+
+.slider { width:940px; position:relative; z-index:1; margin:0 auto 0; padding:30px 0 0 0; }
+
+.flexslider2 { width: 100%; margin: 0; }
+
+.flexslider2 .slides > li { display: none; } /* Hide the slides before the JS is loaded. Avoids image jumping */
+
+.flexslider2 .slides > li { }
+
+/* Clearfix for the .slides element */
+.slides:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+
+html[xmlns] .slides { display: block; }
+
+* html .slides { height: 1%; }
+ @media only screen and (min-width: 768px) and (max-width: 959px) {
+ .flexslider {
+background: url("../images/slider/macbook.png") no-repeat scroll 50% -572px transparent;
+height: 419px;
+}
+.flexslider iframe {
+height: 297px;
+padding: 33px 0 0 136px;
+width: 475px;
+}
+.flexslider .slides img {
+max-width: 475px;
+padding: 33px 0 0 136px;
+}
+.flex-caption {
+bottom: 72px;
+right: 1px;
+width: 474px;
+}
+.flexslider .flex-control-nav {
+left: 325px;
+}
+}
+ @media only screen and (max-width: 767px) {
+ .flexslider {
+background: none repeat scroll 0 0 white;
+height: 209px;
+border: 1px solid #EEE;
+padding: 0 0 16px 0;
+border-radius: 5px 5px 0 0;
+-moz-border-radius: 5px 5px 0 0;
+-webkit-border-radius: 5px 5px 0 0;
+behavior: url(js/PIE.htc);
+}
+.flexslider iframe {
+height: 188px;
+padding: 0 0 0 0;
+width: 300px;
+border-radius: 5px 5px 0 0;
+-moz-border-radius: 5px 5px 0 0;
+-webkit-border-radius: 5px 5px 0 0;
+behavior: url(js/PIE.htc);
+}
+.flexslider .slides img {
+max-width: 300px;
+padding: 0 0 0 0;
+border-radius: 5px 5px 0 0;
+-moz-border-radius: 5px 5px 0 0;
+-webkit-border-radius: 5px 5px 0 0;
+behavior: url(js/PIE.htc);
+}
+.flex-caption {
+display: none;
+}
+.flexslider .flex-control-nav {
+bottom: 8px;
+left: 102px;
+}
+.flex-direction-nav {
+bottom: 297px;
+}
+}
+ @media only screen and (min-width: 480px) and (max-width: 767px) {
+ .flexslider {
+background: none repeat scroll 0 0 rgba(255, 255, 255, 0.3);
+height: 289px;
+border: 1px solid rgba(0, 0, 0, 0.06);
+padding: 0 0 16px 0;
+border-radius: 5px 5px 0 0;
+-moz-border-radius: 5px 5px 0 0;
+-webkit-border-radius: 5px 5px 0 0;
+behavior: url(js/PIE.htc);
+}
+.flexslider iframe {
+height: 262px;
+padding: 0 0 0 0;
+width: 420px;
+border-radius: 5px 5px 0 0;
+-moz-border-radius: 5px 5px 0 0;
+-webkit-border-radius: 5px 5px 0 0;
+behavior: url(js/PIE.htc);
+}
+.flexslider .slides img {
+max-width: 420px;
+padding: 0 0 0 0;
+border-radius: 5px 5px 0 0;
+-moz-border-radius: 5px 5px 0 0;
+-webkit-border-radius: 5px 5px 0 0;
+behavior: url(js/PIE.htc);
+}
+.flex-caption {
+bottom: 72px;
+right: 0;
+width: 420px;
+}
+.flexslider .flex-control-nav {
+bottom: 8px;
+left: 162px;
+}
+.flex-direction-nav {
+bottom: 297px;
+}
+}

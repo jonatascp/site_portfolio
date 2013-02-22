@@ -1,0 +1,52 @@
+@import url(http://fonts.googleapis.com/css?family=Arial:300italic,300,400,400italic,600,600italic,700,700italic|Open+Sans:300italic,300,400,400italic,600,600italic,700,700italic);
+
+body { width:100%; min-width:960px; }
+
+/*=========================================================================
+ Navigation
+========================================================================= */
+.sf-menu ul { position: absolute; display: block; z-index: 9999999999; }
+
+.sf-menu ul li { background: none repeat scroll 0 0 transparent; }
+
+.img-2 { display: none; }
+
+/*=========================================================================
+ bread crumbs
+========================================================================= */
+
+.breadcrumbs span.bread-home a { background: url("../images/home-icon-ie.png") no-repeat scroll 0 0 transparent; text-indent: -777px; width: 22px; }
+
+/*=========================================================================
+ Separator
+========================================================================= */
+
+.separator { border-bottom: 1px dashed #ccc; margin-bottom: 40px; padding-bottom: 29px; position: relative; }
+
+.separator-sidebar { border-bottom: 1px dashed #ccc; margin-bottom: 30px; padding-bottom: 29px; position: relative; }
+
+.footer-separator { background: url("../images/footer-tail.png") repeat-x scroll 0 0 transparent; margin-bottom: 20px; padding-bottom: 10px; position: relative; }
+
+#footer-confirm input, #footer-confirm textarea { background: url("../images/transparent-dark.png") repeat scroll 0 0 transparent; border: 1px solid #48443e; }
+
+.footer-2 { background: url("../images/transparent-dark.png") repeat scroll 0 0 transparent; }
+
+.img-border-bg { display: block; overflow: hidden; }
+
+.flickr ul li { overflow: hidden; display: block; width: 62px; }
+
+.flickr ul li img { background: url("../images/transparent-dark.png") repeat scroll 0 0 transparent; border-radius: 4px 4px 4px 4px; -moz-border-radius: 4px 4px 4px 4px; -webkit-border-radius: 4px 4px 4px 4px; box-shadow: 0 1px 0 #000; -webkit-box-shadow: 0 1px 0 #000; -moz-box-shadow: 0 1px 0 #000; float: left; margin-right: 12px; margin-top: 4px; padding: 6px; }
+
+.tweets ul li { background: url("../images/icons/bird-small.png") no-repeat scroll 8px 12px #262420; box-shadow: 0 0 1px #666666 inset; margin: 0 0 15px; padding: 10px 10px 10px 35px; }
+
+/*=========================================================================
+ Team Image
+========================================================================= */
+
+.figure-1 a { width: 131px; height: 131px; }
+
+.recent-post img, .side-paragraph img { width: 69px; height:69px; }
+
+.search div, .social, .categories ul li, .recent-post-block, .side-paragraph { width: 239px; }
+
+.three-col-blog-video .search div, .three-col-blog-video .social, .three-col-blog-video .categories ul li, .three-col-blog-video .recent-post-block, .three-col-blog-video .side-paragraph { width: 175px; }
