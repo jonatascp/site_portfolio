@@ -2,5 +2,5 @@
 require 'sinatra'
 
 get '/' do
-  redirect '/index.html'
+  redirect '/index_novo.html'
 end
